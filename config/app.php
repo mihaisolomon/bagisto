@@ -225,6 +225,7 @@ return [
         Webkul\Tax\Providers\TaxServiceProvider::class,
         Webkul\Theme\Providers\ThemeServiceProvider::class,
         Webkul\User\Providers\UserServiceProvider::class,
+        Erathrive\EventsManager\Providers\EventsManagerServiceProvider::class,
     ])->toArray(),
 
     /*
