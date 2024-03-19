@@ -226,6 +226,7 @@ return [
         Webkul\Theme\Providers\ThemeServiceProvider::class,
         Webkul\User\Providers\UserServiceProvider::class,
         Erathrive\EventsManager\Providers\EventsManagerServiceProvider::class,
+        Erathrive\Catalog\Providers\CatalogServiceProvider::class,
     ])->toArray(),
 
     /*

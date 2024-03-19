@@ -94,7 +94,8 @@
             "Webkul\\Tax\\": "packages/Webkul/Tax/src",
             "Webkul\\Theme\\": "packages/Webkul/Theme/src",
             "Webkul\\User\\": "packages/Webkul/User/src",
-            "Erathrive\\EventsManager\\": "packages/Erathrive/EventsManager/src"
+            "Erathrive\\EventsManager\\": "packages/Erathrive/EventsManager/src",
+            "Erathrive\\Catalog\\": "packages/Erathrive/Catalog/src"
         }
     },
     "autoload-dev": {
