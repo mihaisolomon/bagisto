@@ -2,6 +2,7 @@
 
 namespace Erathrive\Catalog\Providers;
 
+use Erathrive\Catalog\Console\Commands\Commands\CatalogImportItemsCommand;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Event;
 
@@ -37,6 +38,12 @@ class CatalogServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerConfig();
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CatalogImportItemsCommand::class
+            ]);
+        }
     }
 
     /**
