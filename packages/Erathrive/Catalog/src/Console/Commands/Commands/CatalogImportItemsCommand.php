@@ -65,7 +65,7 @@ class CatalogImportItemsCommand extends Command
             $this->comment('Reading event number: ' . $lastEventId);
             if (in_array($result['type'], ['product_created', 'product_updated'])) {
                 if (count($result['data']) > 1) {
-                   $this->configurableProductRepository->crateProduct($result['data']);
+                   $this->configurableProductRepository->crateProduct($result['data'][0], $result['data']);
                 }
             }
 
